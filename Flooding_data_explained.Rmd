@@ -1,6 +1,7 @@
 ---
 title: "Flooding data explanations fall 2019"
-author: "Riin Aljas (aljasriin@gmail.com)"
+output: github_document
+
 ---
 
 
@@ -50,8 +51,7 @@ floodplains2016 <- floodplains2016 %>%
 
 floodplains2016 %>%
   group_by(flood_zone) %>%
-  count() %>% 
-  datatable()
+  count() 
 ```
 
 ## Storm surge data
@@ -78,8 +78,7 @@ storm <- storm %>%
 
 storm %>% 
   group_by(zone) %>%
-  count() %>%
-  datatable()
+  count() 
 
 ```
 
