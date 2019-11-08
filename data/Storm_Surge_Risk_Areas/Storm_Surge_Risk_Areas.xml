@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <title>Storm Surge Risk Areas</title>
+                <geoform>vector digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>This data reflects areas with a risk of storm tide flooding from hurricanes, based on potential storm tide heights calculated by the National Weather Service's SLOSH (Sea,Lake, and Overland Surge from Hurricanes) Model. The SLOSH Basin used for mapping was Chesapeake Bay (CP5), released in 2014.  This data was prepared by the U.S. Army Corps of Engineers, Baltimore District, Planning Division in January 2016.SLOSH storm tide elevations used for this mapping are based on the Maximum of Maximums (MOM) SLOSH output dataset. The MOM output elevations represent the highest calculated storm tide values based on thousands of SLOSH simulations using different combinations of approach direction, forward speed, landfall point, astronomical tide, and intensity (Category 1 through Category 4). Categories 1 through 4 refer to the Saffir-Simpson scale of hurricane intensity.This map does not reflect the expected storm tide flooding for every hurricane, or for any one particular type of hurricane. This map shows the overall footprint of the area that has some risk of storm tide flooding from hurricanes, based on the MOM output dataset. The purpose of this data is to support hurricane emergency management planning activities.For more information on the SLOSH model and the MOM dataset, please visit http://www.nhc.noaa.gov/surge/slosh.php.</abstract>
+            <purpose>Areas in DC with a risk of storm tide flooding from hurricanes, based on potential storm tide heights.</purpose>
+        </descript>
+        <spdom/>
+        <keywords>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>environment</themekey>
+                <themekey>society</themekey>
+                <themekey>structure</themekey>
+            </theme>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>aug2016</themekey>
+                <themekey>DC GIS</themekey>
+                <themekey>District of Columbia</themekey>
+                <themekey>Environment</themekey>
+                <themekey>Environmental</themekey>
+                <themekey>Hurricane Evacuation Study</themekey>
+                <themekey>NCR GDX</themekey>
+                <themekey>Open Data</themekey>
+                <themekey>Storm Surge</themekey>
+                <themekey>Storm Surge Inundation</themekey>
+                <themekey>Washington DC</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </ptcontac>
+    </idinfo>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>GT-polygon composed of chains</sdtstype>
+                <ptvctcnt>19</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>DCGIS.WaterSurgePly</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                              
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                              
+                    <udom>Coordinates defining the features.</udom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Join_Count</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TARGET_FID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>HES_ZONE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ContourLen</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SE_ANNO_CAD_DATA</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>GIS_ID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>GlobalID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Creator</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Created</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Editor</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Edited</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.AREA</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.LEN</attrlabl>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </distrib>
+        <distliab>See access and use constraints information.</distliab>
+        <custom>DC datasets can be downloaded from "http://opendata.dc.gov".</custom>
+    </distinfo>
+    <metainfo>
+        <metd>20171103</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
