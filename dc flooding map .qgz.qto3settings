@@ -1,0 +1,89 @@
+{
+  "LAYERS": [
+    {
+      "geomType": 3,
+      "layerId": "QPE_7day_CNRFC_QPE__7_day_totals__1e8b2901_89f9_42a8_aa0b_615e93997726",
+      "name": "QPE_7day CNRFC QPE (7-day totals)",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 3,
+      "layerId": "ayer_low_merged_7cb8fe4c_fce0_4406_9ce7_547e42437758",
+      "name": "layer_low_merged",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 3,
+      "layerId": "Floodplains_from_2016_d8966f8f_95ee_4dfa_b61e_592e5fd45ce1",
+      "name": "Floodplains_from_2016",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 3,
+      "layerId": "merged_layer_slr_9ade16a5_614b_401a_939a_39467ce5425b",
+      "name": "merged_sealevelrise",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 3,
+      "layerId": "Storm_Surge_Risk_Areas_7c2e4890_c593_4c70_870f_312a1b8532ff",
+      "name": "Storm_Surge_Risk_Areas",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 0,
+      "layerId": "Hydro_Enforced_DTM_e7e7efab_4c9b_48b9_8d87_90c61f894029",
+      "name": "Hydro_Enforced_DTM",
+      "properties": {
+        "checkBox_Clip": false,
+        "checkBox_Frame": false,
+        "checkBox_Shading": true,
+        "checkBox_Sides": true,
+        "checkBox_Surroundings": false,
+        "checkBox_TransparentBackground": false,
+        "checkBox_Visible": true,
+        "colorButton_Color": "0x000000",
+        "comboBox_ClipLayer": "QPE_7day_CNRFC_QPE__7_day_totals__1e8b2901_89f9_42a8_aa0b_615e93997726",
+        "comboBox_TextureSize": 100,
+        "horizontalSlider_DEMSize": 2,
+        "lineEdit_ImageFile": "",
+        "radioButton_MapCanvas": true,
+        "spinBox_Opacity": 100,
+        "spinBox_Roughening": 1,
+        "spinBox_Size": 3,
+        "toolButton_SideColor": "0xccbbaa"
+      },
+      "visible": true
+    },
+    {
+      "geomType": 0,
+      "layerId": "FLAT",
+      "name": "Flat Plane",
+      "properties": {
+        "checkBox_Clip": false,
+        "checkBox_Frame": false,
+        "checkBox_Shading": true,
+        "checkBox_Sides": true,
+        "checkBox_Surroundings": false,
+        "checkBox_TransparentBackground": false,
+        "checkBox_Visible": true,
+        "colorButton_Color": "0x000000",
+        "comboBox_ClipLayer": "QPE_7day_CNRFC_QPE__7_day_totals__1e8b2901_89f9_42a8_aa0b_615e93997726",
+        "comboBox_TextureSize": 100,
+        "horizontalSlider_DEMSize": 2,
+        "lineEdit_ImageFile": "",
+        "radioButton_MapCanvas": true,
+        "spinBox_Opacity": 100,
+        "spinBox_Roughening": 1,
+        "spinBox_Size": 3,
+        "toolButton_SideColor": "0xccbbaa"
+      },
+      "visible": true
+    }
+  ]
+}
