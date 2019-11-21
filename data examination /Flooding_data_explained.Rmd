@@ -1,0 +1,84 @@
+---
+title: "Flooding data explanations fall 2019"
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, 
+  message = FALSE, 
+  warning = FALSE
+  )
+knitr::opts_knit$set(
+  root.dir = rprojroot::find_rstudio_root_file()
+  )
+```
+
+## Data used to create maps for flooding project.##
+
+#Floodplains 
+
+Acquired from FEMA thorugh DC gov open data. The values are from 2016 (needs to be validated), data itself is updated 2019. 
+
+```{r floodplains}
+
+##examine floodplain data----
+
+library(tidyverse)
+library(readr)
+library(DT)
+
+floodplains2016 <- 
+  read_csv('data/source/Floodplains_from_2016.csv')
+
+
+
+##create look up table for floodzones (source https://snmapmod.snco.us/fmm/document/fema-flood-zone-definitions.pdf)
+
+flood_zone_lkp <-  data.frame(
+  "FLD_ZONE" = c('X', 'AE', 'A', '0.2 PCT ANNUAL CHANCE FLOOD HAZARD'),
+  "flood_zone" = c('Area of minimal flood hazard,Zone X is the area
+determined to be outside the 500‐year flood and protected by levee from 100‐
+year flood.', 'Areas subject to inundation by the 1-%-annual-chance flood event determined by detailed methods. Base Flood Elevations (BFEs) are shown', 'Areas with a 1% annual chance of flooding and a 26% chance of flooding over the life of
+a 30‐year mortgage. Because detailed analyses are not performed for such areas; no
+depths or base flood elevations are shown within these zones.', '0.2 PCT ANNUAL CHANCE FLOOD HAZARD'))
+
+floodplains2016 <- floodplains2016 %>% 
+  left_join(flood_zone_lkp, by = "FLD_ZONE")
+
+
+floodplains2016 %>%
+  group_by(flood_zone) %>%
+  count() %>%
+  datatable()
+```
+
+## Storm surge data
+
+This data reflects areas with a risk of storm tide flooding from hurricanes, based on potential storm tide heights calculated by the National Weather Service's SLOSH (Sea,Lake, and Overland Surge from Hurricanes) Model. The SLOSH Basin used for mapping was Chesapeake Bay (CP5), released in 2014. This data was prepared by the U.S. Army Corps of Engineers, Baltimore District, Planning Division in January 2016.SLOSH storm tide elevations used for this mapping are based on the Maximum of Maximums (MOM) SLOSH output dataset. The MOM output elevations represent the highest calculated storm tide values based on thousands of SLOSH simulations using different combinations of approach direction, forward speed, landfall point, astronomical tide, and intensity (Category 1 through Category 4). Categories 1 through 4 refer to the Saffir-Simpson scale of hurricane intensity.This map does not reflect the expected storm tide flooding for every hurricane, or for any one particular type of hurricane. This map shows the overall footprint of the area that has some risk of storm tide flooding from hurricanes, based on the MOM output dataset. The purpose of this data is to support hurricane emergency management planning activities.For more information on the SLOSH model and the MOM dataset, please visit http://www.nhc.noaa.gov/surge/slosh.php.
+
+```{r storm surge}
+storm <- read_csv('data/source/Storm_Surge_Risk_Areas.csv')
+
+unique(storm$HES_ZONE)
+storm %>% filter(HES_ZONE == 99) %>% nrow()
+
+###create lookup table 
+
+storm_lkp <- data.frame("HES_ZONE" = c(1, 2, 3, 4, 99), 
+                        "zone" = c("the area is inundated by a Category 1 hurricane", 
+                                   "the area is inundated by a Category 2 hurricane", 
+                                   "the area is inundated by a Category 3 hurricane", 
+                                   "the area is inundated by a Category 34 hurricane", 
+                         "the area is not going to be inundated in any storm"))
+
+storm <- storm %>%
+  left_join(storm_lkp, by = "HES_ZONE")
+
+storm %>% 
+  group_by(zone) %>%
+  count()%>%
+  datatable()
+
+```
+

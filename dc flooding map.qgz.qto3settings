@@ -1,0 +1,39 @@
+{
+  "LAYERS": [
+    {
+      "geomType": 3,
+      "layerId": "ayer_low_merged_7cb8fe4c_fce0_4406_9ce7_547e42437758",
+      "name": "layer_low_merged",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 3,
+      "layerId": "Floodplains_from_2016_d8966f8f_95ee_4dfa_b61e_592e5fd45ce1",
+      "name": "Floodplains (2016)",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 3,
+      "layerId": "merged_layer_slr_9ade16a5_614b_401a_939a_39467ce5425b",
+      "name": "Sea Level Rise Scenarios",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 3,
+      "layerId": "Storm_Surge_Risk_Areas_7c2e4890_c593_4c70_870f_312a1b8532ff",
+      "name": "Storm Surge Risk Areas",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 0,
+      "layerId": "FLAT",
+      "name": "Flat Plane",
+      "properties": {},
+      "visible": false
+    }
+  ]
+}
