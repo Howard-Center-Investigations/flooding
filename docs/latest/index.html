@@ -7,6 +7,8 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="dist/leaflet.groupedlayercontrol.min.css">
+        <link rel="stylesheet" href="src/leaflet.groupedlayercontrol.css">">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <style>
         html, body, #map {
@@ -21,7 +23,6 @@
     <body>
         <div id="map">
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/leaflet.rotatedMarker.js"></script>
@@ -31,8 +32,8 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="dist/leaflet.groupedlayercontrol.min.css"></script>
-        <script src="dist/leaflet.groupedlayercontrol.min.js"></script>
+        <script scr="scr/leaflet.groupedlayercontrol.js"></script>
+        <script scr='leaflet.groupedlayercontrol.min.js'></script>
         <script src="data/SeaLevelRise1ft_0.js"></script>
         <script src="data/SeaLevelRise2ft_1.js"></script>
         <script src="data/SeaLevelRise3ft_2.js"></script>
@@ -73,9 +74,9 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(232,246,243,1.0)',
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_SeaLevelRise1ft_0');
@@ -105,7 +106,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(208,236,231,1.0)',
                 interactive: false,
             }
@@ -137,7 +138,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(162,217,206,1.0)',
                 interactive: false,
             }
@@ -169,7 +170,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(115,198,182,1.0)',
                 interactive: false,
             }
@@ -201,7 +202,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(69,179,157,1.0)',
                 interactive: false,
             }
@@ -233,7 +234,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(22,160,133,1.0)',
                 interactive: false,
             }
@@ -265,7 +266,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(19,141,117,1.0)',
                 interactive: false,
             }
@@ -297,7 +298,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(17,122,101,1.0)',
                 interactive: false,
             }
@@ -329,7 +330,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(7,104,41,1.0)',
                 interactive: false,
             }
@@ -361,7 +362,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(11,83,69,1.0)',
                 interactive: false,
             }
@@ -393,7 +394,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(158,202,225,1.0)',
                 interactive: false,
             }
@@ -425,7 +426,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(66,146,198,1.0)',
                 interactive: false,
             }
@@ -457,7 +458,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(8,81,156,1.0)',
                 interactive: false,
             }
@@ -489,7 +490,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(8,48,107,1.0)',
                 interactive: false,
             }
@@ -521,7 +522,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(190,191,190,1.0)',
                 interactive: false,
             }
@@ -553,7 +554,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(188,189,220,1.0)',
                 interactive: false,
             }
@@ -585,7 +586,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(243,166,178,1.0)',
                 interactive: false,
             }
@@ -617,7 +618,7 @@
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.4,
                 fillColor: 'rgba(232,113,141,1.0)',
                 interactive: false,
             }
@@ -648,23 +649,19 @@
         map.addLayer(layer_GoogleMaps_18);
         var baseMaps = {};
         var groupedOverlays = {
-          "Floodplains": {'one percent': layer_1annualchanceoffloodinganda26chanceoffloodingover30yearsmortage_16,
-                          '0.2 percent': layer_02annualchangefloodhazard_15
-                        },
-          "Storm surge areas": {'Cat 1': layer_Category1hurricaneVerydangerouswindswillproducesomedamage_10,
-                                'Cat 2': layer_Category2hurricaneExtremelydangerouswindswillcauseextensivedamage_11,
-                                'Cat 3': layer_Category3hurricaneDevastatingdamagewilloccur_12,
-                                'Cat 4': layer_Category4hurricaneCatastrophicdamagewilloccur_13
-                              }
+          "Landmarks": {
+            "Motorways": layer_GoogleMaps_18,
+            "Cities": layer_GoogleMaps_18
+          },
+          "Points of Interest": {
+            "Restaurants": layer_GoogleMaps_18
+          }
         };
-        L.control.layers(baseMaps, groupedOverlays).addTo(map);
-
-        //L.control.layers(baseMaps,{'<img src="legend/1annualchanceoffloodinganda26chanceoffloodingover30yearsmortage_17.png" /> 1% annual chance of flooding and a 26% chance of flooding over 30 years mortage': layer_1annualchanceoffloodinganda26chanceoffloodingover30yearsmortage_17,'<img src="legend/1annualchanceoffloodinganda26chanceoffloodingover30yearsmortage_16.png" /> 1% annual chance of flooding and a 26% chance of flooding over 30 years mortage': layer_1annualchanceoffloodinganda26chanceoffloodingover30yearsmortage_16,'<img src="legend/02annualchangefloodhazard_15.png" /> 0.2% annual change flood hazard': layer_02annualchangefloodhazard_15,'<img src="legend/Noriskarea_14.png" /> No risk area ': layer_Noriskarea_14,'<img src="legend/Category4hurricaneCatastrophicdamagewilloccur_13.png" /> Category 4 hurricane (Catastrophic damage will occur)': layer_Category4hurricaneCatastrophicdamagewilloccur_13,'<img src="legend/Category3hurricaneDevastatingdamagewilloccur_12.png" /> Categor
-        //y 3 hurricane (Devastating damage will occur)': layer_Category3hurricaneDevastatingdamagewilloccur_12,'<img src="legend/Category2hurricaneExtremelydangerouswindswillcauseextensivedamage_11.png" /> Category 2 hurricane (Extremely dangerous winds will cause extensive damage)': layer_Category2hurricaneExtremelydangerouswindswillcauseextensivedamage_11,'<img src="legend///Category1hurricaneVerydangerouswindswillproducesomedamage_10.png" /> Category 1 hurricane (Very dangerous winds will produce some damage)': layer_Category1hurricaneVerydangerouswindswillproducesomedamage_10,'<img src="legend/SeaLevelRise10ft_9.png" /> Sea Level Rise 10ft': layer_SeaLevelRise10ft_9,'<img src="legend/SeaLevelRise9ft_8.png" /> Sea Level Rise 9ft': layer_SeaLevelRise9ft_8,'<img src="legend/SeaLevelRise8ft_7.png" /> Sea Level Rise 8ft': layer_SeaLevelRise8ft_7,'<img src="legend/SeaLevelRise7ft_6.png" /> Sea Level Rise 7ft': layer_SeaLevelRise7ft_6,'<img src="legend/SeaLevelRise6ft_5.png" /> Sea Level
-        //Rise 6ft': layer_SeaLevelRise6ft_5,'<img src="legend/SeaLevelRise5ft_4.png" /> Sea Level Rise 5ft': layer_SeaLevelRise5ft_4,'<img src="legend/SeaLevelRise4ft_3.png" /> Sea Level Rise 4ft': layer_SeaLevelRise4ft_3,'<img src="legend/SeaLevelRise3ft_2.png" /> Sea Level Rise 3ft': layer_SeaLevelRise3ft_2,'<img src="legend/SeaLevelRise2ft_1.png" /> Sea Level Rise 2ft': layer_SeaLevelRise2ft_1,'<img src="legend/SeaLevelRise1ft_0.png" /> Sea Level Rise 1ft': layer_SeaLevelRise1ft_0,},{collapsed:false}).addTo(map);
-        //setBounds();
 
 
+
+        L.control.layers(baseMaps,{'<img src="legend/1annualchanceoffloodinganda26chanceoffloodingover30yearsmortage_17.png" /> 1% annual chance of flooding and a 26% chance of flooding over 30 years mortage': layer_1annualchanceoffloodinganda26chanceoffloodingover30yearsmortage_17,'<img src="legend/1annualchanceoffloodinganda26chanceoffloodingover30yearsmortage_16.png" /> 1% annual chance of flooding and a 26% chance of flooding over 30 years mortage': layer_1annualchanceoffloodinganda26chanceoffloodingover30yearsmortage_16,'<img src="legend/02annualchangefloodhazard_15.png" /> 0.2% annual change flood hazard': layer_02annualchangefloodhazard_15,'<img src="legend/Noriskarea_14.png" /> No risk area ': layer_Noriskarea_14,'<img src="legend/Category4hurricaneCatastrophicdamagewilloccur_13.png" /> Category 4 hurricane (Catastrophic damage will occur)': layer_Category4hurricaneCatastrophicdamagewilloccur_13,'<img src="legend/Category3hurricaneDevastatingdamagewilloccur_12.png" /> Category 3 hurricane (Devastating damage will occur)': layer_Category3hurricaneDevastatingdamagewilloccur_12,'<img src="legend/Category2hurricaneExtremelydangerouswindswillcauseextensivedamage_11.png" /> Category 2 hurricane (Extremely dangerous winds will cause extensive damage)': layer_Category2hurricaneExtremelydangerouswindswillcauseextensivedamage_11,'<img src="legend/Category1hurricaneVerydangerouswindswillproducesomedamage_10.png" /> Category 1 hurricane (Very dangerous winds will produce some damage)': layer_Category1hurricaneVerydangerouswindswillproducesomedamage_10,'<img src="legend/SeaLevelRise10ft_9.png" /> Sea Level Rise 10ft': layer_SeaLevelRise10ft_9,'<img src="legend/SeaLevelRise9ft_8.png" /> Sea Level Rise 9ft': layer_SeaLevelRise9ft_8,'<img src="legend/SeaLevelRise8ft_7.png" /> Sea Level Rise 8ft': layer_SeaLevelRise8ft_7,'<img src="legend/SeaLevelRise7ft_6.png" /> Sea Level Rise 7ft': layer_SeaLevelRise7ft_6,'<img src="legend/SeaLevelRise6ft_5.png" /> Sea Level Rise 6ft': layer_SeaLevelRise6ft_5,'<img src="legend/SeaLevelRise5ft_4.png" /> Sea Level Rise 5ft': layer_SeaLevelRise5ft_4,'<img src="legend/SeaLevelRise4ft_3.png" /> Sea Level Rise 4ft': layer_SeaLevelRise4ft_3,'<img src="legend/SeaLevelRise3ft_2.png" /> Sea Level Rise 3ft': layer_SeaLevelRise3ft_2,'<img src="legend/SeaLevelRise2ft_1.png" /> Sea Level Rise 2ft': layer_SeaLevelRise2ft_1,'<img src="legend/SeaLevelRise1ft_0.png" /> Sea Level Rise 1ft': layer_SeaLevelRise1ft_0,},{collapsed:false}).addTo(map);
+        setBounds();
         </script>
     </body>
 </html>
