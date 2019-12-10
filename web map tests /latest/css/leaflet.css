@@ -16,6 +16,7 @@
 	}
 .leaflet-container {
 	overflow: hidden;
+	white-space: nowrap;
 	}
 .leaflet-tile,
 .leaflet-marker-icon,
@@ -367,8 +368,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-control-layers-expanded .leaflet-control-layers-list {
 	display: block;
 	position: relative;
+	white-space: nowrap;
 	}
 .leaflet-control-layers-expanded {
+	white-space: nowrap; 
 	padding: 6px 10px 6px 6px;
 	color: #333;
 	background-color: rgba(232, 232, 232, 0.9);
